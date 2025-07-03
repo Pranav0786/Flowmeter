@@ -25,7 +25,7 @@ export default function SmsTab() {
 
   const fetchAllSmsFromAPI = async () => {
     try {
-      const response = await fetch('http://localhost:5000/all-sms');
+      const response = await fetch('https://flowmeter.onrender.com/all-sms');
       if (!response.ok) throw new Error('API error');
       const data = await response.json();
       console.log(data);

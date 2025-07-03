@@ -12,7 +12,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchVolume = async () => {
       try {
-        const response = await fetch('http://localhost:5000/total-volume');
+        const response = await fetch('https://flowmeter.onrender.com/total-volume');
         if (!response.ok) throw new Error('Failed to fetch volume');
         const data = await response.json();
         setVolume(data.totalVolume);
