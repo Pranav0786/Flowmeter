@@ -22,7 +22,7 @@ export default function Dashboard() {
     };
 
     fetchVolume();
-    const interval = setInterval(fetchVolume, 5 * 60 * 1000); // refresh every 5 min
+    const interval = setInterval(fetchVolume, 5 * 60 * 1000); 
     return () => clearInterval(interval);
   }, []);
 
