@@ -11,7 +11,7 @@ export default function RealTimeFlowChart() {
 
   const fetchFlowData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/flow-data');
+      const response = await fetch('https://flowmeter.onrender.com/flow-data');
       if (!response.ok) throw new Error('Failed to fetch flow data');
       const data = await response.json();
       setFlowData(data);
